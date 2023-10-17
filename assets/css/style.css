@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0%;
     padding: 0%;
@@ -8,4 +9,55 @@
     background: url("../images/cinema-movie-reel-blue-background.jpg") no-repeat center center /cover;
     height: 100vh;
     font-size: 62.5%;
+=======
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.search-container {
+    float: left;
+    margin-top: 10px;
+}
+
+.search-container input[type=text] {
+    padding: 6px;
+    font-size: 14px;
+    border: none;
+}
+
+.search-container button {
+    padding: 6px 10px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+>>>>>>> 9123cc3 (adding styles for nav bar)
 }

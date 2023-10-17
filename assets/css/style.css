@@ -1,11 +1,93 @@
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
 }
 
-:root {
-    background: url("../images/cinema-movie-reel-blue-background.jpg") no-repeat center center /cover;
-    height: 100vh;
-    font-size: 62.5%;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.logo img {
+    width: 100px;
+    /* Adjust the width of the logo */
+}
+
+.search-container {
+    float: right;
+    margin-top: 10px;
+}
+
+.search-container input[type=text] {
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 8px 16px;
+    background-color: #555;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.movie-list {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }

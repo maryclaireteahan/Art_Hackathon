@@ -11,18 +11,29 @@
 <body>
     <div class="navbar">
         <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-        <div class="search-container">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Search</button>
-        </div>
+        <a href="list of movies.html">ListOfMovies</a>
+        <a href="details.html">Details</a>
     </div>
+        <div class="logo">
+            <img src="logo.png" alt="Movie Logo">
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search...">
+            <button onclick="search()">Search</button>
+        </div>
+    
 
     <div class="container">
         <h1>Movie Gallery</h1>
-        <!-- Movie listing goes here -->
+        <ul class="movie-list">
+            <li>Movie 1</li>
+            <li>Movie 2</li>
+            <li>Movie 3</li>
+            <!-- Add more movie entries here -->
+        </ul>
     </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

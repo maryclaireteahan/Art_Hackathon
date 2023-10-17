@@ -9,7 +9,7 @@ DOM_Elements.button.addEventListener('click', search)
 function getMovieHTML(title, img_url, id) {
     return `
     <div id=${id}>
-        <a href="./details?id=${id}">
+        <a href="../../details.html?id=${id}">
             <img class="movie-img" src="https://simkl.in/posters/${img_url}_m.webp">
             <p>${title}</p>
         </a>
@@ -24,18 +24,11 @@ const getPopularMovies = () => {
         .then(res => {
             console.log(res[0].title, res[0].poster, res[0].ids.simkl_id)
             renderMovies(res)
-            getMovieDetails(res[0].ids.simkl_id)
         })
 }
 
 function renderMovies(movies) {
     DOM_Elements.movies.innerHTML = movies.map(movie => getMovieHTML(movie.title, movie.poster, movie.ids.simkl_id))
-}
-
-const getMovieDetails = (movie_id) => {
-    return fetch(`https://api.simkl.com/movies/${movie_id}?extended=full&client_id=${client_id}`)
-        .then(res => res.json())
-        .then(res => console.log(res))
 }
 
 const getSearchedMovies = (search) => {
@@ -56,3 +49,6 @@ function search() {
 }
 
 getPopularMovies()
+
+
+

@@ -9,7 +9,7 @@ DOM_Elements.button.addEventListener('click', search)
 function getMovieHTML(title, img_url, id) {
     return `
     <div id=${id}>
-        <a href="../../Art_Hackathon/details.html?id=${id}">
+        <a href="/Art_Hackathon/details.html?id=${id}">
             <img class="movie-img" src="https://simkl.in/posters/${img_url}_m.webp">
             <p>${title}</p>
         </a>

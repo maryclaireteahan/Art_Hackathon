@@ -37,3 +37,8 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ---
 
 Happy coding!
+
+![Search Screen](/readme/documentation/wireframes/search.png)
+![Movie Screen](/readme/documentation/wireframes/movie.png)
+
+

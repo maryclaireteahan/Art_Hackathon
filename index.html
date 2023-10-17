@@ -6,23 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Movie Gallery</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="navbar">
-      <a href="index.html">Home</a>
-      <div class="search-container">
-        <input type="text" id="searchBar" placeholder="Search..." />
-        <button onclick="search()">Search</button>
-      </div>
-      <a href="details.html">Details</a>
+        <a href="index.html">Home</a>
+        <a href="list of movies.html">ListOfMovies</a>
+        <a href="details.html">Details</a>
     </div>
+        <div class="logo">
+            <img src="logo.png" alt="Movie Logo">
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search...">
+            <button onclick="search()">Search</button>
+        </div>
+    
 
     <div class="container">
-      <h1>Movie Gallery</h1>
-      <!-- Content goes here -->
+        <h1>Movie Gallery</h1>
+        <ul class="movie-list">
+            <li>Movie 1</li>
+            <li>Movie 2</li>
+            <li>Movie 3</li>
+            <!-- Add more movie entries here -->
+        </ul>
     </div>
 
     <script src="assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>

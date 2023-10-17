@@ -12,6 +12,7 @@ Project Description
 
 ### Done ✓
 
+- [x] Add wireframes to readme.  
 - [x] create project template  
 - [x] create gihub repo  
 
